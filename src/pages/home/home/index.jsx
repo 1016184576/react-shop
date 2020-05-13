@@ -1,8 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import asyncComponent from '../../../components/asyncComponent';
-//import styles from './index.module.scss';
-import './index.scss';
+import styles from './index.module.scss';
 
 const IndexComponent = asyncComponent(() => import('../index'));
 const CartComponent = asyncComponent(() => import('../cart'));
@@ -50,12 +49,12 @@ class HomeComponent extends React.Component {
             <Route path="/center" component={CenterComponent}></Route>
           </Switch>
         </React.Fragment>
-        <div className='bottom-nav'>
+        <div className={styles['bottom-nav']}>
           <ul>
             {
               this.state.navList.map((item, index) => {
                 return (
-                  <li className={this.state.activeIndex === index ? 'active' : ''} onClick={this.goPage.bind(this, index)} key={index}>
+                  <li className={this.state.activeIndex === index ? styles['active'] : ''} onClick={this.goPage.bind(this, index)} key={index}>
                     <img src={this.state.activeIndex === index ? item.activeIcon : item.icon} alt="" />
                     <span>{item.text}</span>
                   </li>

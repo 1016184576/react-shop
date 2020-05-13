@@ -1,6 +1,6 @@
 import React from 'react';
-
-import './index.scss';
+import HeaderComponent from '../../../components/headerComponent';
+import styles from './index.module.scss';
 
 class CenterComponent extends React.Component {
   componentDidMount() {
@@ -9,8 +9,9 @@ class CenterComponent extends React.Component {
 
   render() {
     return (
-      <div>
-        sss
+      <div className="page">
+        <HeaderComponent title="个人中心" rightText="完成"/>
+        <div className={styles['user-info-warp']}></div>
       </div>
     )
   }

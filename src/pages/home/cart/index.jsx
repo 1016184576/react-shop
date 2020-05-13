@@ -1,7 +1,7 @@
 import React from 'react';
 import { Chart } from '@antv/g2';
-import './index.scss';
-
+/* import styles from './index.module.scss';
+ */
 
 class CartComponent extends React.Component {
 
@@ -24,7 +24,7 @@ class CartComponent extends React.Component {
     ];
 
     let chart = new Chart({
-      container: 'c1',
+      container: 'mountNode',
       autoFit: false,
       width: 800,
       height: 600,

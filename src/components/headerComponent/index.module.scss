@@ -1,0 +1,28 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    .back{
+        height: 100%;
+        width: 1rem;
+        background: url(../../assets/images/home/goods/back.png) no-repeat center center;
+        background-size: 70% auto;
+    }
+    .title{
+        flex: 1;
+        height: 100%;
+        line-height: 1rem;
+        text-align: center;
+        font-size: .36rem;
+    }
+    .right-text{
+        width: 1rem;
+        height: 100%;
+        line-height: 1rem;
+        text-align: center;
+    }
+}
