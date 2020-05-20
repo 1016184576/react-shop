@@ -1,0 +1,29 @@
+.shop-checkbox {
+    input {
+        display: none;
+    }
+
+    label {
+        display: inline-block;
+        align-items: center;
+        height: .4rem;
+        width: auto;
+        background: url(../../assets/images/home/cart/unChecked.png) no-repeat center left;
+        background-size: .4rem .4rem;
+        padding-left: .4rem;
+
+        span {
+            display: inline-block;
+            height: .4rem;
+            line-height: .4rem;
+            margin-left: .1rem;
+            font-size: .24rem;
+            vertical-align: top;
+        }
+    }
+
+    label.checked {
+        background-image: url(../../assets/images/home/cart/checkmark.png);
+    }
+
+}

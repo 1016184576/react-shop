@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-import { server_base_url } from './config'
+import { server_base_url } from '../config';
 
 export default function request(opts) {
   return new Promise((resolve, reject) => {

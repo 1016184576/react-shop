@@ -79,14 +79,16 @@ html,body {
 
 .line-b{position: relative;}
 .line-b::after{
-    content: '';
     position: absolute;
-    left: 0;
+    box-sizing: border-box;
+    content: ' ';
+    pointer-events: none;
     right: 0;
     bottom: 0;
-    height: 1px;
-    background-color: #efefef;
-    transform: scale(0.5);
+    left: 0;
+    border-bottom: 1px solid #ebedf0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
 }
 
 .color1{color: #f73b61;}

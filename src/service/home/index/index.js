@@ -1,4 +1,4 @@
-import request from '../../../assets/js/request'
+import request from '../../../common/request';
 
 const API_CONFIG = {
   getSlideApi: '/home/index/slide'

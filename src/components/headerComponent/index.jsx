@@ -2,19 +2,21 @@ import React, { Component } from 'react';
 import {withRouter} from 'react-router';
 import styles from './index.module.scss';
 
-class index extends Component {
+class Index extends Component {
 
   onLeftClick(){
-    if(this.props.onLeftClick && typeof this.props.onLeftClick === 'function'){
-      this.props.onLeftClick();
+    let leftClick = this.props.onLeftClick;
+    if(leftClick && typeof leftClick === 'function'){
+      leftClick();
     }else{
       this.props.history.goBack();
     }
   }
 
   onRightClick(){
-    if(this.props.onRightClick && typeof this.props.onRightClick === 'function'){
-      this.props.onRightClick();
+    let rightClick = this.props.onRightClick;
+    if(rightClick && typeof rightClick === 'function'){
+      rightClick();
     }
   }
 
@@ -29,4 +31,4 @@ class index extends Component {
   }
 }
 
-export default withRouter(index);
+export default withRouter(Index);
