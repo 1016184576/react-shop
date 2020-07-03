@@ -7,24 +7,26 @@ class Index extends Component {
     super(props);
     this.state = {
       componentID: `checkbox${new Date().getTime()}${mathRand(4)}`,
-      checked: this.props.checked ? true : false,
     }
   }
 
   handleChange(e) {
-    let checked = e.target.checked; 
-    let onChange = this.props.onChange;
+    let checked = e.target.checked;
+    let { onChange, index = 0 } = this.props;
     if (onChange && typeof onChange === 'function') {
-      onChange(checked);
-      this.setState({checked});
+      onChange(checked, index);
     }
   }
 
   render() {
     return (
       <div className={styles['shop-checkbox']} style={this.props.style}>
-        <input type="checkbox" id={this.state.componentID} onChange={this.handleChange.bind(this)} />
-        <label className={this.state.checked ? styles['checked'] : ''} htmlFor={this.state.componentID}>
+        <input type="checkbox"
+          id={this.state.componentID}
+          checked={this.props.checked}
+          onChange={this.handleChange.bind(this)}
+        />
+        <label className={this.props.checked ? styles['checked'] : ''} htmlFor={this.state.componentID}>
           {
             this.props.labelText && <span>{this.props.labelText}</span>
           }

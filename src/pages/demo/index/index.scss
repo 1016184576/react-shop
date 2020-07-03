@@ -1,0 +1,107 @@
+.admin-page {
+    display: flex;
+    color: #999;
+    font-size: 14px;
+
+    .nav-left {
+        min-width: 220px;
+        height: calc(100vh);
+        background-color: #001529;
+    }
+
+    .main {
+        flex: 1;
+        height: calc(100vh);
+        overflow: auto;
+        background-color: rgba(217, 224, 233, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .header {
+            height: 50px;
+            background-color: #001529;
+        }
+
+        .container {
+            flex: 1;
+            padding: 20px 30px 0 30px;
+            overflow: scroll;
+
+            .ant-table-thead>tr>th {
+                background-color: rgba(221, 238, 253, 1);
+                border: none;
+            }
+
+            .ant-table-row:last-child {
+                background-color: rgba(245, 246, 232, 1);
+            }
+
+            .icon-button {
+                width: 24px;
+                height: 24px;
+                border: 1px solid #eaeaea;
+                border-radius: 3px;
+                margin: 0 auto;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            .notice-no {
+                color: rgba(200, 200, 200, 1);
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            .notice-list {
+                display: flex;
+
+                ul {
+                    flex: 1;
+                    margin-right: 45px;
+
+                    li {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 40px;
+                        border-bottom: 1px solid #eee;
+
+                        .value {
+                            color: #333333;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+.g2-legend {
+    position: absolute;
+    right: 30px !important;
+    top: 50% !important;
+    transform: translate(0, -50%) !important;
+
+    .g2-legend-title {}
+
+    .g2-legend-list {}
+}
+
+.surroun-tabs {
+    display: flex;
+    width: 360px;
+    li {
+        flex: 1;
+        box-sizing: border-box;
+        height: 35px;
+        list-style: none;
+        cursor: pointer;
+    }
+
+    li.active {
+        color: red;
+    }
+}

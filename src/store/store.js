@@ -1,8 +1,8 @@
-import Counter from './counter';
+import Cart from './home/cart';
 import User from './user';
 
  const store = {
-    counter: new Counter(),
+    cart: new Cart(),
     user: new User()
 }
 

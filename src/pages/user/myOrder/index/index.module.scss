@@ -1,0 +1,17 @@
+.order-page{
+  .order-tabs{
+    display: flex;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #dcdcdc;
+    li{
+      flex: 1;
+      text-align: center;
+      height: .8rem;
+      line-height: .8rem;
+      font-size: .28rem;
+    }
+    li.active{
+      border-bottom: 1px solid #e42321;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import asyncComponent from '../../../components/asyncComponent';
 import styles from './index.module.scss';
 
@@ -47,6 +47,7 @@ class HomeComponent extends React.Component {
             <Route path="/index" component={IndexComponent}></Route>
             <Route path="/cart" component={CartComponent}></Route>
             <Route path="/center" component={CenterComponent}></Route>
+            <Redirect to={"/index"}></Redirect>
           </Switch>
         </React.Fragment>
         <div className={styles['bottom-nav']}>

@@ -104,15 +104,106 @@
     .cart-main .cart-list .goods-wrap .buy-wrap .amount-input-wrap .amount-input {
         width: 0.76rem;
         height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .cart-main .cart-list .goods-wrap .buy-wrap .amount-input-wrap .amount-input input {
-        width: 100%;
-        height: 100%;
+        width: 0.6rem;
+        height: 0.4rem;
         text-align: center;
     }
 
     .cart-main .cart-list .goods-wrap .buy-wrap .amount-input-wrap .inc {
         border-left: 1px solid #000000;
     }
+
+    .orderend-wrap {
+        width: 100%;
+        height: 1rem;
+        background: #FFFFFF;
+        position: fixed;
+        z-index: 10;
+        left: 0;
+        bottom: 1.2rem;
+        border-top: 1px solid #EFEFEF;
+        display: flex;
+        display: -webkit-flex;
+    }
+
+    .orderend-wrap .select-area {
+        width: auto;
+        height: 100%;
+        flex: 3;
+        -webkit-flex: 3;
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        align-items: center;
+        -webkit-align-items: center;
+    }
+
+    .orderend-wrap .select-area .select-wrap {
+        width: auto;
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -webkit-align-items: center;
+    }
+
+    .orderend-wrap .select-area .select-wrap .select-text {
+        font-size: 0.24rem;
+    }
+
+    .orderend-wrap .select-area .select-wrap .select-btn {
+        width: 0.4rem;
+        height: 0.4rem;
+        border: #EFEFEF solid 1px;
+        border-radius: 100%;
+        margin-left: 0.2rem;
+        margin-right: 0.1rem;
+    }
+
+    .orderend-wrap .select-area .select-wrap .select-btn.active {
+        /* background-image: url("../../../../assets/images/home/cart/checkmark.png");
+        background-size: 100%; */
+        background-repeat: no-repeat;
+        background-position: center;
+        border: #FFFFFF solid 1px;
+    }
+
+    .orderend-wrap .orderend-btn {
+        width: auto;
+        height: 100%;
+        flex: 1;
+        -webkit-flex: 1;
+        background: #CC0004;
+        font-size: 0.32rem;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 1rem;
+    }
+
+    .orderend-wrap .orderend-btn.disable {
+        background: #BFBFBF;
+    }
+
+    .orderend-wrap .total {
+        font-size: 0.24rem;
+        margin-right: 0.2rem;
+    }
+
+    .orderend-wrap .total span {
+        color: #CC0004
+    }
+
+    .null-item{
+        width: 100%;
+        margin-top: 0.2rem;
+        font-size: 0.28rem;
+        text-align: center;
+    }
+
 }
