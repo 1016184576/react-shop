@@ -75,6 +75,7 @@ export default class Cart {
     this.cartList[index].checked = checked;
     this.setTotal();
   }
+  
 
   /**
    * 修改全选状态
